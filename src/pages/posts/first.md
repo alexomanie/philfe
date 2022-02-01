@@ -2,6 +2,11 @@
 title: 'Erster Blog Post'
 description: 'Eindrücke von den Philippinen'
 author: Eva Steinberger
+image:
+  {
+    url: https://picsum.photos/900/600,
+    alt: random image,
+  }
 layout: '../../layouts/PostLayout.astro'
 ---
 
