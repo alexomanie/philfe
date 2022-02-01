@@ -10,7 +10,9 @@ posts = posts.slice(0, 20);
 <BaseLayout>
 		{posts.map((item) => {
 			return <a href={item.url}>
-        <BlogPostCard post={item}/>
+        <div class="mb-8">
+					<BlogPostCard post={item}/>
+				</div>
       </a>;
 		})}
 </BaseLayout>

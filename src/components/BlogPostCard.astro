@@ -3,15 +3,15 @@
 
 ---
 
-  <div class="my-8 relative bg-white shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:w-2/3 sm:rounded-lg">
-    <div class="flex flex-row space-x-4">
-      <div class="hidden sm:block overflow-hidden">
-        <img class="object-cover h-64 w-64 sm:rounded-l-lg" src="https://picsum.photos/600/300" alt="">
-      </div>
-      <div class="p-6">
-        <div class="font-light text-3xl">{post.title}</div>
-	      <div class="text-gray-500 mb-8">{post.author}</div>
-	      <p class="text-lg">{post.description}</p>
+<div class="max-w-md rounded-xl bg-white shadow-md overflow-hidden sm:max-w-full">
+  <div class="sm:flex">
+    <div class="sm:shrink-0">
+      <img class="h-48 w-full object-cover sm:h-full sm:w-48" src="https://picsum.photos/600/300" alt="">
     </div>
+    <div class="p-8">
+      <div class="block mt-1 text-lg leading-tight font-medium text-black">{post.title}</div>
+	    <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{post.author}</div>
+	    <p class="mt-2 text-slate-500">{post.description}</p>
     </div>
+  </div>
 </div>
