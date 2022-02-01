@@ -1,11 +1,16 @@
 ---
 // Component Imports
-import Button from '../components/Button.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+import BlogPostCard from '../components/BlogPostCard.astro';
+let posts = Astro.fetchContent("/src/pages/posts/*.md");
+posts.sort((a, b) => b.published - a.published);
+posts = posts.slice(0, 20);
 ---
 
 <BaseLayout>
-			<div>Hauptseite</div>
+		{posts.map((item) => {
+			return <a href={item.url}>
+        <BlogPostCard post={item}/>
+      </a>;
+		})}
 </BaseLayout>
