@@ -4,7 +4,7 @@ description: 'Eindrücke von den Philippinen'
 author: Eva Steinberger
 image:
   {
-    url: https://picsum.photos/900/600,
+    url: /public/cover/first.jpg,
     alt: random image,
   }
 layout: '../../layouts/PostLayout.astro'
