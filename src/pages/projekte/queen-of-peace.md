@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/ProjectMarkdownLayout.astro'
 ---
-# Waisenhaus “Queen of Peace”
+## Waisenhaus “Queen of Peace”
 
 Das Waisenhaus **“Queen of Peace”** befindet sich auf der Hauptinsel Luzon etwa 20 Fahrminuten von der Stadt Naga City entfernt. Hier kümmern sich Franziskanerschwestern (meist etwa 4 Schwestern) um verstoßene, verwaiste, vernachlässigte oder behinderte Kinder vom Säuglingsalter bis hin zum Erwachsenenalter. Unterstützt werden sie von Angestellten, Freiwilligen und Studenten (die etwa Krankenschwester oder Pfleger lernen). Häufig ist das Waisenhaus auch nur eine vorübergehende Unterkunft für die Kinder, denn es kommt vor, dass sich die Familien oder Angehörige die Kinder wieder zurück holen. Im Waisenhaus “Queen of Peace” wird versucht den Kindern eine möglichst unbeschwerte Kindheit zu ermöglichen: vom nahrhaften Essen über Schulbildung bis hin zu gelegentlichen Ausflügen. Nicht alle gut 30 Kinder des Waisenhauses sind tatsächlich Vollwaisen, sondern kommen oftmals aus schwierigen familiären Zuständen in das Waisenhaus. Einige Schicksale sind wirklich extrem und schockierend. Ein Geschwisterpaar, beispielsweise, lebte eine Weile vollkommen auf sich selbst gestellt, nachdem all ihre nahen Verwandten verstorben waren. Teilweise wurden die beiden zwar von Nachbarn mit Essen versorgt, aber ansonsten hatten die Kinder keinerlei Unterstützung. Schlussendlich bat eine Nachbarin das Waisenhaus um Hilfe. Seitdem kümmert
 

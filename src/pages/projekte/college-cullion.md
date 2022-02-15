@@ -2,7 +2,7 @@
 layout: '../../layouts/ProjectMarkdownLayout.astro'
 ---
 
-# College Cullion
+## College Cullion
 
 Auf der früheren Leprainsel Culion, die recht abgelegen nördlich der Inselgruppe Palawan im Westen der Philippinen liegt, sind die Bildungsmöglichkeiten der Kinder und Jugendlichen sehr beschränkt. Eine der wenigen Möglichkeiten  bildet das College Culion, wo Studenten die Möglichkeit gegeben wird einen Abschluss zu erwerben um einen guten Beruf ausüben zu können. Hier vergibt die Philippinenhilfe Stipendien an besonders bedürftige Jugendliche und unterstützt das College, so dass ein Studium auch für weniger betuchte Studenten möglich ist. 
 
