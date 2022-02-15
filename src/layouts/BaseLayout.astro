@@ -1,20 +1,22 @@
 ---
-
+const {current} = Astro.props;
+console.log(current);
 ---
 
 <html lang="de-DE">
   <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 		     <script defer type="module" src={Astro.resolve('../scripts/main.js')}></script>
+			 <link rel="stylesheet" href={Astro.resolve("../styles/global.css")} />
+
 	<head>
 		<style global>
-			@import "../styles/global.css";
 			[x-cloak] { display: none !important; }
 		</style>
 	</head>
-	<body class="bg-gray-50 text-gray-700">
+	<body class="bg-gray-100 text-gray-700 mx-auto container">
 		<div class="flex flex-col" style="scroll-behavior: smooth;">
-			<header x-data="{open: false}" class="mb-6 mx-auto p-4 md:space-x-12 top-0 z-30 flex-col md:flex-row flex items-center">
+			<header x-data="{open: false}" class="mb-6 py-4 md:space-x-12 top-0 z-30 flex-col md:flex-row flex items-center">
         <a href="/" class="text-2xl md:mr-8">Philippinenhilfe e.V.</a>
 				<div @click.away="open = false" class="relative" x-data="{ open: false }">
 					<button @click="open = !open" class="text-md font-semibold hover:bg-gray-200 focus:bg-gray-200 p-2 rounded-md">
@@ -23,18 +25,18 @@
 					</button>
 					<div x-cloak x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48 z-30">
                         <div class="p-2 bg-white rounded-md shadow dark-mode:bg-gray-700">
-                            <a href="/verein" class="block text-md font-semibold rounded-lg hover:bg-gray-200 py-2 px-4">Unser Verein</a>
-                            <a href="/vorstand" class="block text-md font-semibold rounded-lg hover:bg-gray-200 py-2 px-4">Unser Vorstand</a>
+                            <a href="/informationen/verein" class="block text-md font-semibold rounded-lg hover:bg-gray-200 py-2 px-4">Über den Verein</a>
+                            <a href="/vorstand" class="block text-md font-semibold rounded-lg hover:bg-gray-200 py-2 px-4">Wer sind wir</a>
+                            <a href="/vorstand" class="block text-md font-semibold rounded-lg hover:bg-gray-200 py-2 px-4">Satzung</a>
+                            <a href="/vorstand" class="block text-md font-semibold rounded-lg hover:bg-gray-200 py-2 px-4">Flyer downloaden</a>
                         </div>
                     </div>
 				</div>
-				<div class="absolute top-16">
-				</div>
         <a href="/projekte" class="text-md font-semibold hover:bg-gray-200 focus:bg-gray-200 p-2 rounded-md">Projekte</a>
-				<a href="/spenden" class="text-md font-semibold hover:bg-gray-200 focus:bg-gray-200 p-2 rounded-md">Unterstützen</a>
+				<a href="/spenden" class="text-md text-white px-8 font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-600 py-2 rounded-full">Spenden</a>
 			</header>
-			<main class="mx-auto sm:mx-0 md:px-12 lg:px-16 xl:px-32">
-          <slot />
+			<main class="">
+          		<slot />
 			</main>
 		</div>
 

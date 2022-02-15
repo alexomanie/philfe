@@ -1,9 +1,18 @@
 ---
-// Component Imports
 import BaseLayout from '../layouts/BaseLayout.astro';
-
+import ProjectCard from '../components/ProjectCard.astro';
 ---
 
-<BaseLayout>
-  <div>Unsere Projekte</div>
+<BaseLayout current="projekte">
+  <div class="text-3xl my-16">Ihre Spenden ermöglichen eine breite Unterstüzung</div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-12">
+      <ProjectCard title="Waisenhaus Queen of Peace" to="/projekte/queen-of-peace">Wir helfen verstoßenen, verwaisten, vernachlässigten oder Kindern mit Handicap</ProjectCard>
+      <ProjectCard title="Einrichtung Gift of Love" to="/projekte/gift-of-love">Eine von Mutter Theresa Schwestern betriebene Einrichtung in Naga City</ProjectCard>
+      <ProjectCard title="Ernährungsprojekte">Beschreibung folgt noch <br></br></ProjectCard>
+      <ProjectCard title="Wasserprojekte">Beschreibung folgt noch</ProjectCard>
+      <ProjectCard title="Shoe Academy Davao">Beschreibung folgt noch</ProjectCard>
+      <ProjectCard title="College Cullion" to="/projekte/college-cullion">Bildung und somit Zukunft für Kinder und Jugendliche</ProjectCard>
+      <ProjectCard title="Katastrophenhilfe" to="/projekte/katastrophenhilfe">Wenn man machtlos gegen die Natur ist</ProjectCard>
+  </div>
 </BaseLayout>

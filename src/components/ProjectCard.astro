@@ -1,0 +1,28 @@
+---
+  const { title, to } = Astro.props;
+---
+
+<div class="bg-white shadow-xl rounded-lg p-8">
+  
+  <!-- <a target="_blank" rel="noreferrer noopener" href={to}>
+    <div class="md:flex-shrink-0">
+      <img src="/cover/first.jpg" alt="uploaded cover image"
+        class="object-cover w-full rounded-lg rounded-b-none">
+    </div>
+  </a> -->
+  
+    <div class="mb-8">
+      <h2 class="truncate font-medium mb-4 text-2xl text-gray-800 tracking-normal">{title}</h2>
+      
+      <p class="break-words text-gray-700">
+        <slot/>
+      </p>
+      
+    </div>
+        <div class=" flex justify-end">
+        <a target="_blank" rel="noreferrer noopener" href={to}
+        class="text-indigo-500 hover:text-indigo-600 mx-2">
+            Mehr Informationen
+        </a>
+    </div>
+</div>

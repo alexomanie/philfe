@@ -7,7 +7,7 @@ posts.sort((a, b) => b.published - a.published);
 posts = posts.slice(0, 20);
 ---
 
-<BaseLayout>
+<BaseLayout current="/">
 		{posts.map((item) => {
 			return <a href={item.url}>
         <div class="mb-8">
